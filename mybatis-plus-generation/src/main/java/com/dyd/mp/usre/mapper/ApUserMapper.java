@@ -1,7 +1,7 @@
 package com.dyd.mp.usre.mapper;
 
-import com.dyd.mp.usre.entity.ApUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.dyd.mp.usre.entity.ApUser;
 
 /**
  * <p>

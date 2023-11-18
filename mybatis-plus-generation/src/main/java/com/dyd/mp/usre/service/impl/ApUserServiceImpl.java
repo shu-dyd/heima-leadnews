@@ -1,9 +1,9 @@
 package com.dyd.mp.usre.service.impl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.dyd.mp.usre.entity.ApUser;
 import com.dyd.mp.usre.mapper.ApUserMapper;
 import com.dyd.mp.usre.service.IApUserService;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 /**
