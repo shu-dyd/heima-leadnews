@@ -20,14 +20,12 @@ public class AuthorizeFilter implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        System.out.println("<<<<<<<<<<<<<<<进入网关的全局过滤器中>>>>>>>>>>>>>>>>>>");
         // 1.获取request和response对象
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
 
         // 2.判断是否是登陆
         if(request.getURI().getPath().contains("/login")){
-            System.out.println("<<<<<<<<<<<<<<<是登陆URL>>>>>>>>>>>>>>>>>>");
             return chain.filter(exchange);
         }
 
