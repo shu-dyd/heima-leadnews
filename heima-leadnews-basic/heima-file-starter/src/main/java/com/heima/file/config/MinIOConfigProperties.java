@@ -14,5 +14,5 @@ public class MinIOConfigProperties implements Serializable {
     private String secretKey;
     private String bucket;
     private String endpoint;
-    private String readPath;
+    private String readpoint;
 }
